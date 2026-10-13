@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayushi Shukla — MBA | HR & Data Analytics</title>
+<meta name="description" content="Ayushi Shukla — MBA candidate at NMIMS, building a career at the intersection of people and data: HR and Data Analytics.">
+<meta property="og:title" content="Ayushi Shukla — HR & Data Analytics">
+<meta property="og:description" content="MBA candidate at NMIMS. People-first, data-driven.">
+<meta property="og:image" content="assets/ayushi.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23231f1c'/><text x='50' y='66' font-family='Georgia,serif' font-size='52' text-anchor='middle' fill='%23e9e2d6'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f3efe8; --bg-2:#ebe5db; --ink:#231f1c; --ink-2:#5b544d; --line:#d8d0c3;
+    --accent:#8a4b3c; --accent-soft:#e7d6cf; --card:#faf8f4;
+    --serif:"Fraunces", Georgia, serif; --sans:"Inter", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#171513; --bg-2:#1f1c19; --ink:#efe9e0; --ink-2:#a69d92; --line:#332e29;
+      --accent:#d79a86; --accent-soft:#3a2924; --card:#1d1a17; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--serif);font-size:1.25rem;text-decoration:none;letter-spacing:-.01em}
+  .brand i{color:var(--accent)}
+  .links{display:flex;gap:28px;list-style:none}
+  .links a{text-decoration:none;font-size:.9rem;color:var(--ink-2);transition:color .2s}
+  .links a:hover{color:var(--ink)}
+  @media (max-width:720px){.links{display:none}}
+
+  /* hero */
+  .hero{padding:72px 0 88px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.04;letter-spacing:-.025em}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{margin-top:24px;font-size:1.12rem;color:var(--ink-2);max-width:34em}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-size:.92rem;font-weight:500;text-decoration:none;transition:transform .2s, background .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--ink);color:var(--bg)}
+  .btn-ghost{border:1px solid var(--line);background:var(--card)}
+  .portrait{position:relative;max-width:420px;justify-self:end;width:100%}
+  .portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:62% 15%;border-radius:200px 200px 16px 16px;display:block;filter:saturate(.95)}
+  .portrait::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--accent);border-radius:200px 200px 16px 16px;z-index:-1}
+  .badge{position:absolute;left:-22px;bottom:36px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:.82rem;box-shadow:0 10px 30px -12px rgba(0,0,0,.25)}
+  .badge b{display:block;font-family:var(--serif);font-weight:500;font-size:1rem}
+  @media (max-width:860px){
+    .hero{padding:40px 0 64px}
+    .hero .wrap{grid-template-columns:1fr;gap:48px}
+    .portrait{max-width:280px;margin:0 auto;order:-1;justify-self:center}
+    .badge{left:-8px}
+  }
+
+  /* sections */
+  section{padding:88px 0;border-top:1px solid var(--line)}
+  .sec-head{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:48px}
+  .sec-num{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:1rem}
+  h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.02em;line-height:1.15}
+  .sec-body{grid-column:2}
+  @media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:8px}.sec-body{grid-column:1}}
+  p + p{margin-top:16px}
+  .about-text{font-size:1.08rem;color:var(--ink-2);max-width:40em}
+  .about-text strong{color:var(--ink);font-weight:500}
+
+  /* paths */
+  .paths{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .path{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+  .path .icon{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;margin-bottom:20px;color:var(--accent)}
+  .path h3{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin-bottom:8px}
+  .path p{color:var(--ink-2);font-size:.96rem}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .tag{font-size:.8rem;padding:5px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2)}
+  .bridge{margin-top:20px;padding:22px 28px;border-radius:18px;background:var(--ink);color:var(--bg);display:flex;gap:18px;align-items:center}
+  .bridge span{font-family:var(--serif);font-style:italic;font-size:1.15rem}
+  .bridge p{opacity:.8;font-size:.93rem}
+  @media (max-width:760px){.paths{grid-template-columns:1fr}.bridge{flex-direction:column;align-items:flex-start;gap:6px}}
+
+  /* timeline */
+  .timeline{list-style:none;position:relative}
+  .timeline li{display:grid;grid-template-columns:160px 1fr;gap:32px;padding:28px 0;border-bottom:1px solid var(--line)}
+  .timeline li:first-child{padding-top:0}
+  .when{font-size:.85rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+  .what h3{font-family:var(--serif);font-weight:500;font-size:1.3rem}
+  .what .org{color:var(--accent);font-size:.95rem;margin:2px 0 8px}
+  .what p{color:var(--ink-2);font-size:.95rem}
+  .now{display:inline-block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:middle;font-family:var(--sans);font-weight:600}
+  @media (max-width:640px){.timeline li{grid-template-columns:1fr;gap:6px}}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .skill-col{border-top:2px solid var(--ink);padding-top:18px}
+  .skill-col h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:14px}
+  .skill-col ul{list-style:none}
+  .skill-col li{padding:9px 0;border-bottom:1px dashed var(--line);color:var(--ink-2);font-size:.96rem}
+  @media (max-width:760px){.skills{grid-template-columns:1fr}}
+
+  /* projects */
+  .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;transition:transform .25s, border-color .25s;text-decoration:none}
+  .project:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .project .kind{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .project h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin:10px 0 8px}
+  .project p{color:var(--ink-2);font-size:.94rem;flex:1}
+  .project .more{margin-top:18px;font-size:.88rem;font-weight:500;display:flex;align-items:center;gap:6px}
+  @media (max-width:760px){.projects{grid-template-columns:1fr}}
+
+  /* contact */
+  .contact{background:var(--bg-2)}
+  .contact-big{font-family:var(--serif);font-size:clamp(1.6rem,4.2vw,3rem);letter-spacing:-.02em;line-height:1.15;text-decoration:none;border-bottom:1px solid var(--accent);word-break:break-all;transition:color .2s}
+  .contact-big:hover{color:var(--accent)}
+  .socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+  footer{padding:28px 0;font-size:.82rem;color:var(--ink-2);border-top:1px solid var(--line);background:var(--bg-2)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}.btn,.project{transition:none}}
+  svg{flex-shrink:0}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">Ayushi <i>Shukla</i></a>
+    <ul class="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#focus">Focus</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">MBA Candidate · NMIMS</div>
+      <h1>Where <em>people</em> meet <em>data</em>.</h1>
+      <p class="lede">I'm Ayushi — an MBA student building a career in Human Resources and Data Analytics. I'm drawn to the questions behind both: what makes people thrive at work, and what the numbers can tell us about it.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Get in touch
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ayushishukla28feb02/" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- To add a resume: put resume.pdf next to index.html and uncomment the line below -->
+        <!-- <a class="btn btn-ghost" href="resume.pdf" target="_blank">Resume</a> -->
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="assets/ayushi.jpg" alt="Portrait of Ayushi Shukla" width="900" height="1080">
+      <div class="badge"><b>Open to internships</b>HR · People Analytics · Data</div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">01 — About</div>
+      <div>
+        <h2>A people-first mind with an analytical streak.</h2>
+      </div>
+    </div>
+    <div class="sec-head reveal" style="margin-bottom:0">
+      <div></div>
+      <div class="about-text">
+        <p>I'm currently in the first year of my <strong>MBA at NMIMS</strong>, where I'm exploring two paths that I believe belong together: <strong>Human Resources</strong> and <strong>Data Analytics</strong>.</p>
+        <p>Organisations run on people, and the best people decisions are increasingly made with evidence — from hiring and engagement to retention and growth. I want to be the person who understands both sides: the human context and the data behind it.</p>
+        <p>Outside the classroom, I'm building hands-on skills through projects, case competitions and coursework. This site is where I'll share that journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="focus">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">02 — Focus</div>
+      <h2>Two paths, one direction.</h2>
+    </div>
+    <div class="paths">
+      <div class="path reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.6c2.6.2 4.3 1.9 5 5.4"/></svg></div>
+        <h3>Human Resources</h3>
+        <p>Talent acquisition, employee engagement and building workplaces where people grow — with a focus on fair, well-reasoned people decisions.</p>
+        <div class="tags"><span class="tag">Talent Acquisition</span><span class="tag">Employee Engagement</span><span class="tag">L&amp;D</span><span class="tag">Org Behaviour</span></div>
+      </div>
+      <div class="path reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></svg></div>
+        <h3>Data Analytics</h3>
+        <p>Turning raw data into clear, decision-ready insight — cleaning, analysing and visualising data so the story is easy to act on.</p>
+        <div class="tags"><span class="tag">Excel</span><span class="tag">SQL</span><span class="tag">Power BI / Tableau</span><span class="tag">Python</span></div>
+      </div>
+    </div>
+    <div class="bridge reveal">
+      <span>People Analytics</span>
+      <p>The bridge between the two — using data to understand attrition, hiring funnels, engagement and performance.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">03 — Education</div>
+      <h2>Where I'm learning.</h2>
+    </div>
+    <ol class="timeline">
+      <li class="reveal">
+        <div class="when">2026 — 2028</div>
+        <div class="what">
+          <h3>Master of Business Administration <span class="now">Current</span></h3>
+          <div class="org">NMIMS</div>
+          <p>First-year MBA candidate, with interests in Human Resource Management and Business Analytics.</p>
+        </div>
+      </li>
+      <!-- Add earlier education here — copy the <li> block above, e.g.:
+      <li class="reveal">
+        <div class="when">2020 — 2023</div>
+        <div class="what">
+          <h3>Bachelor's Degree — Subject</h3>
+          <div class="org">College / University name</div>
+          <p>One line about focus, achievements or score.</p>
+        </div>
+      </li>
+      -->
+      <!-- Internships / work experience can use the same format. -->
+    </ol>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">04 — Toolkit</div>
+      <h2>What I work with.</h2>
+    </div>
+    <div class="skills">
+      <div class="skill-col reveal">
+        <h3>Analytics</h3>
+        <ul><li>Microsoft Excel</li><li>SQL</li><li>Power BI / Tableau</li><li>Python (pandas)</li></ul>
+      </div>
+      <div class="skill-col reveal">
+        <h3>People &amp; HR</h3>
+        <ul><li>Recruitment &amp; Selection</li><li>Employee Engagement</li><li>HR Metrics</li><li>Organisational Behaviour</li></ul>
+      </div>
+      <div class="skill-col reveal">
+        <h3>Professional</h3>
+        <ul><li>Communication</li><li>Presentation &amp; Storytelling</li><li>Stakeholder Management</li><li>Teamwork</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">05 — Work</div>
+      <h2>Projects &amp; case studies.</h2>
+    </div>
+    <!-- Replace these cards with real projects. Point href to the GitHub repo, a report or a dashboard link. -->
+    <div class="projects">
+      <a class="project reveal" href="https://github.com/ayushishukla28" target="_blank" rel="noopener">
+        <span class="kind">People Analytics</span>
+        <h3>Employee Attrition Analysis</h3>
+        <p>Exploring which factors relate to employee turnover and presenting the findings in a dashboard for HR decision-makers.</p>
+        <span class="more">View on GitHub →</span>
+      </a>
+      <a class="project reveal" href="https://github.com/ayushishukla28" target="_blank" rel="noopener">
+        <span class="kind">Data Visualisation</span>
+        <h3>Business Performance Dashboard</h3>
+        <p>An interactive dashboard summarising key business KPIs — built to make trends readable at a glance.</p>
+        <span class="more">View on GitHub →</span>
+      </a>
+      <a class="project reveal" href="https://github.com/ayushishukla28" target="_blank" rel="noopener">
+        <span class="kind">HR Strategy</span>
+        <h3>Recruitment Funnel Case Study</h3>
+        <p>Mapping a hiring funnel end to end, identifying drop-off stages and recommending improvements.</p>
+        <span class="more">View on GitHub →</span>
+      </a>
+      <a class="project reveal" href="https://github.com/ayushishukla28" target="_blank" rel="noopener">
+        <span class="kind">Coming soon</span>
+        <h3>More on GitHub</h3>
+        <p>New projects from my MBA coursework and self-learning will be added here as I build them.</p>
+        <span class="more">github.com/ayushishukla28 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">06 — Contact</div>
+      <div>
+        <h2 style="margin-bottom:28px">Let's talk — about internships, projects, or ideas.</h2>
+        <a class="contact-big" href="mailto:ayushishukla28feb02@gmail.com">ayushishukla28feb02@gmail.com</a>
+        <div class="socials">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ayushishukla28feb02/" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ayushishukla28" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
+          <a class="btn btn-ghost" href="mailto:ayushishukla28feb02@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Ayushi Shukla</span>
+    <a href="#top" style="text-decoration:none">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
